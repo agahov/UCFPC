@@ -1,0 +1,635 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"taskName": "UCFPS Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPS",
+				"Mac",
+				"Debug",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPS Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPS",
+				"Mac",
+				"Debug",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPS Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPS",
+				"Mac",
+				"DebugGame",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPS Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPS",
+				"Mac",
+				"DebugGame",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPS Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPS",
+				"Mac",
+				"Development",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPS Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPS",
+				"Mac",
+				"Development",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPS Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPS",
+				"Mac",
+				"Shipping",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPS Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPS",
+				"Mac",
+				"Shipping",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPS Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPS",
+				"Mac",
+				"Test",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPS Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPS",
+				"Mac",
+				"Test",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPS IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPS",
+				"IOS",
+				"Debug",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPS IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPS",
+				"IOS",
+				"Debug",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPS IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPS",
+				"IOS",
+				"DebugGame",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPS IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPS",
+				"IOS",
+				"DebugGame",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPS IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPS",
+				"IOS",
+				"Development",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPS IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPS",
+				"IOS",
+				"Development",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPS IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPS",
+				"IOS",
+				"Shipping",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPS IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPS",
+				"IOS",
+				"Shipping",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPS IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPS",
+				"IOS",
+				"Test",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPS IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPS",
+				"IOS",
+				"Test",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPS HTML5 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPS",
+				"HTML5",
+				"Debug",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPS HTML5 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPS",
+				"HTML5",
+				"Debug",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPS HTML5 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPS",
+				"HTML5",
+				"DebugGame",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPS HTML5 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPS",
+				"HTML5",
+				"DebugGame",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPS HTML5 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPS",
+				"HTML5",
+				"Development",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPS HTML5 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPS",
+				"HTML5",
+				"Development",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPS HTML5 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPS",
+				"HTML5",
+				"Shipping",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPS HTML5 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPS",
+				"HTML5",
+				"Shipping",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPS HTML5 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPS",
+				"HTML5",
+				"Test",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPS HTML5 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPS",
+				"HTML5",
+				"Test",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPSEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPSEditor",
+				"Mac",
+				"Debug",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPSEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPSEditor",
+				"Mac",
+				"Debug",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPSEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPSEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPSEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPSEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPSEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPSEditor",
+				"Mac",
+				"Development",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		},
+		{
+			"taskName": "UCFPSEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"UCFPSEditor",
+				"Mac",
+				"Development",
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.18"
+			}
+		}
+	]
+}

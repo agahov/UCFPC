@@ -1,0 +1,8 @@
+{
+	"typescript.tsc.autoDetect": "off",
+	"files.exclude": {
+		"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/.vscode": true,
+		"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/Content": true,
+		"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/Intermediate": true
+	}
+}

@@ -1,0 +1,90 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "UCFPS (Debug)",
+			"request": "launch",
+			"preLaunchTask": "UCFPS Mac Debug Build",
+			"program": "/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/Binaries/Mac/UCFPS-Mac-Debug.app/Contents/MacOS/UCFPS-Mac-Debug",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.18",
+			"type": "lldb"
+		},
+		{
+			"name": "UCFPS (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "UCFPS Mac DebugGame Build",
+			"program": "/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/Binaries/Mac/UCFPS-Mac-DebugGame.app/Contents/MacOS/UCFPS-Mac-DebugGame",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.18",
+			"type": "lldb"
+		},
+		{
+			"name": "UCFPS (Development)",
+			"request": "launch",
+			"preLaunchTask": "UCFPS Mac Development Build",
+			"program": "/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/Binaries/Mac/UCFPS.app/Contents/MacOS/UCFPS",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.18",
+			"type": "lldb"
+		},
+		{
+			"name": "UCFPS (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "UCFPS Mac Shipping Build",
+			"program": "/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/Binaries/Mac/UCFPS-Mac-Shipping.app/Contents/MacOS/UCFPS-Mac-Shipping",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.18",
+			"type": "lldb"
+		},
+		{
+			"name": "UCFPS (Test)",
+			"request": "launch",
+			"preLaunchTask": "UCFPS Mac Test Build",
+			"program": "/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/Binaries/Mac/UCFPS-Mac-Test.app/Contents/MacOS/UCFPS-Mac-Test",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.18",
+			"type": "lldb"
+		},
+		{
+			"name": "UCFPSEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "UCFPSEditor Mac Debug Build",
+			"program": "/Users/Shared/Epic Games/UE_4.18/Engine/Binaries/Mac/UE4Editor-Mac-Debug.app/Contents/MacOS/UE4Editor-Mac-Debug",
+			"args": [
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-debug"
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.18",
+			"type": "lldb"
+		},
+		{
+			"name": "UCFPSEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "UCFPSEditor Mac DebugGame Build",
+			"program": "/Users/Shared/Epic Games/UE_4.18/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
+			"args": [
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject",
+				"-debug"
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.18",
+			"type": "lldb"
+		},
+		{
+			"name": "UCFPSEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "UCFPSEditor Mac Development Build",
+			"program": "/Users/Shared/Epic Games/UE_4.18/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
+			"args": [
+				"/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/UCFPS.uproject"
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.18",
+			"type": "lldb"
+		}
+	]
+}
