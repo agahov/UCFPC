@@ -5,6 +5,7 @@
             "includePath": [
                 "/Users/Shared/Epic Games/UE_4.18/Engine/Source",
                 "/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/Source",
+                "/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/Intermediate/Build/Mac/UE4Editor/Inc/UCFPS",
                 "/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/Source/UCFPS",
                 "/Users/Shared/Epic Games/UE_4.18/Engine/Source/Runtime/Core/Public",
                 "/Users/Shared/Epic Games/UE_4.18/Engine/Source/Runtime/Core/Public/Internationalization",
@@ -349,6 +350,7 @@
                 "path": [
                     "/Users/Shared/Epic Games/UE_4.18/Engine/Source",
                     "/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/Source",
+                    "/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/Intermediate/Build/Mac/UE4Editor/Inc/UCFPS",
                     "/Users/gakhov/Space/unrealProjects/UCFPS/UCFPS/Source/UCFPS",
                     "/Users/Shared/Epic Games/UE_4.18/Engine/Source/Runtime/Core/Public",
                     "/Users/Shared/Epic Games/UE_4.18/Engine/Source/Runtime/Core/Public/Internationalization",
