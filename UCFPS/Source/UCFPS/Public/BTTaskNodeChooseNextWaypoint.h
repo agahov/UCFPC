@@ -17,7 +17,6 @@ class UCFPS_API UBTTaskNodeChooseNextWaypoint : public UBTTaskNode
 	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
 	protected:
 
-	
 
 	UPROPERTY(EditAnywhere, Category = "Blackboard")
 	struct FBlackboardKeySelector IndexKey;
@@ -25,7 +24,5 @@ class UCFPS_API UBTTaskNodeChooseNextWaypoint : public UBTTaskNode
 	UPROPERTY(EditAnywhere, Category = "Blackboard")
 	struct FBlackboardKeySelector WayPointKey;
 
-
-	const FName WayPointName = FName("WayPoint");
 	
 };

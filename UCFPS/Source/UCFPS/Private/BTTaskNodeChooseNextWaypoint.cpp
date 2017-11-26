@@ -3,13 +3,14 @@
 #include "BTTaskNodeChooseNextWaypoint.h"
 #include "BehaviorTree/BlackboardComponent.h"
 
-#include "Patrol_ThirdPersonCharacter.h"
+
 #include "AIController.h"
+#include "PatrolRouteComponent.h"
 
 EBTNodeResult::Type UBTTaskNodeChooseNextWaypoint::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) 
 {
     
-    //return EBTNodeResult::Type::Succeeded;
+    
 
     auto BlackboardComp = OwnerComp.GetBlackboardComponent();
     if (!ensure(BlackboardComp) )return EBTNodeResult::Failed;
@@ -18,19 +19,17 @@ EBTNodeResult::Type UBTTaskNodeChooseNextWaypoint::ExecuteTask(UBehaviorTreeComp
     {
      	UE_LOG(LogTemp, Warning, TEXT("GetAIOwner is null"));
 		return EBTNodeResult::Failed;
-   
     }
     
     auto ControlledPawn = OwnerComp.GetAIOwner()->GetPawn();
-
-
     if (!ensure(ControlledPawn) )return EBTNodeResult::Failed;
 
-    auto PatrolingCharacter = Cast<APatrol_ThirdPersonCharacter>(ControlledPawn);
+    auto PatrolRouteComp = ControlledPawn->FindComponentByClass<UPatrolRouteComponent>();
+    
 
-    if (!ensure(PatrolingCharacter) )return EBTNodeResult::Failed;
+    if (!ensure(PatrolRouteComp) )return EBTNodeResult::Failed;
 
-    auto PatrolPoints = PatrolingCharacter->PatrolPointsCPP;
+    auto PatrolPoints = PatrolRouteComp->GetPatrolPoints();
 
     if (PatrolPoints.Num() == 0)
 	{
@@ -40,14 +39,14 @@ EBTNodeResult::Type UBTTaskNodeChooseNextWaypoint::ExecuteTask(UBehaviorTreeComp
 
 
     auto Index = BlackboardComp->GetValueAsInt(IndexKey.SelectedKeyName);
-    if (!Index)
-    {
-        UE_LOG(LogTemp,Warning, TEXT("IndexValue is Null "));     
-        Index = 0;
-        BlackboardComp->SetValueAsInt(IndexKey.SelectedKeyName, Index);
-    }
+    // if (!Index)
+    // {
+    //     UE_LOG(LogTemp,Warning, TEXT("IndexValue is Null "));     
+    //     Index = 0;
+    //     BlackboardComp->SetValueAsInt(IndexKey.SelectedKeyName, Index);
+    // }
 
-    //UE_LOG(LogTemp,Warning, TEXT("Set Index: %i"), Index);     
+    UE_LOG(LogTemp,Warning, TEXT("Set Index: %i"), Index);     
 
     auto PatrolPoint = PatrolPoints[Index];
     if (!(ensure(PatrolPoint)))
@@ -55,17 +54,9 @@ EBTNodeResult::Type UBTTaskNodeChooseNextWaypoint::ExecuteTask(UBehaviorTreeComp
         UE_LOG(LogTemp, Warning, TEXT("patrol point is null"));
 		return EBTNodeResult::Failed;
     }
-    else
-    {
-        //todo look in batale tank how to get name  
-        //auto Name = PatrolPoint->GetName();
-        //UE_LOG(LogTemp, Warning, TEXT("PatrolPoint  %s"),*Name);
-         
-        //UE_LOG(LogTemp, Warning, TEXT("PatrolPoint %s"), *PatrolPoint.GetName());
-    }
 
 
-     //BlackboardComp->SetValueAsObject(WayPointName, PatrolPoint);
+     
      BlackboardComp->SetValueAsObject(WayPointKey.SelectedKeyName, PatrolPoint);
 
      
