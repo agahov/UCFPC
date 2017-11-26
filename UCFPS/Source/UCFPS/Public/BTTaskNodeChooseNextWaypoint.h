@@ -22,5 +22,10 @@ class UCFPS_API UBTTaskNodeChooseNextWaypoint : public UBTTaskNode
 	UPROPERTY(EditAnywhere, Category = "Blackboard")
 	struct FBlackboardKeySelector IndexKey;
 	
+	UPROPERTY(EditAnywhere, Category = "Blackboard")
+	struct FBlackboardKeySelector WayPointKey;
+
+
+	const FName WayPointName = FName("WayPoint");
 	
 };
