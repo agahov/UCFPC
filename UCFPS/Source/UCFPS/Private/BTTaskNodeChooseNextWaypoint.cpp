@@ -46,7 +46,7 @@ EBTNodeResult::Type UBTTaskNodeChooseNextWaypoint::ExecuteTask(UBehaviorTreeComp
     //     BlackboardComp->SetValueAsInt(IndexKey.SelectedKeyName, Index);
     // }
 
-    UE_LOG(LogTemp,Warning, TEXT("Set Index: %i"), Index);     
+    //UE_LOG(LogTemp,Warning, TEXT("Set Index: %i"), Index);     
 
     auto PatrolPoint = PatrolPoints[Index];
     if (!(ensure(PatrolPoint)))
